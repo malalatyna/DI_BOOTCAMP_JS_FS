@@ -1,0 +1,38 @@
+
+.first-row{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);     gap:5px;
+    background-color: yellow;
+    height: 100px;
+    width:100px;
+    margin-bottom: 5px;
+}
+.second-row{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);     gap:5px;
+    background-color: yellow;
+    height: 100px;
+    width:100px;
+    margin-bottom: 5px;
+}
+.third-row{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);     gap:5px;
+    background-color: yellow;
+    height: 100px;
+    width:100px;
+    margin-bottom: 5px;
+}
+.forth-row{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);     gap:5px;
+    background-color: yellow;
+    height: 100px;
+    width:100px;
+    margin-bottom: 5px;
+}
+

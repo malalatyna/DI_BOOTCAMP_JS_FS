@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0; 
+    box-sizing:border-box;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.header{
+    width:100%;
+    min-height:100vh;
+    background-attachment: fixed;
+    background-image: url('images/headerback.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position:relative;
+}
+ .fixed-top{
+    position:fixed;
+    height:60px;
+    width: 100%;
+    background-color: orange;
+}
+.left1{
+    float:left;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%; /*if 100% it will appear before puting the cursor */
+    height:2px;
+    background:purple;
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+} 
+
+.nav-links ul li:hover::after{
+  width:100%;
+} 
+.container{
+    width:70%;
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);/*it will be in the center of the div*/
+}
+.container h1{
+    color:orange;
+    font-size:30px;
+}
+p{
+    color:black;
+    font-size:15px;
+}
+.btn{
+    display:inline-block;
+    text-decoration: none;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    position:relative;
+    cursor:pointer;
+    background-color: orange;
+    font-size:15px;
+}
+.btn:hover{
+    background-color:purple;
+    transition:1s;
+}
+nav .fa-solid{
+    display:none;
+}
+/*for devices less than or equal to 700px*/
+@media (max-width:700px) {
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links{
+        position:absolute;
+        background:orange;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:0;
+        text-align:left;
+        z-index:2;
+    } 
+     nav .fa-solid{
+        display:block;
+        margin:10px;
+        color:#fff;
+        font-size: 22px;
+        cursor:pointer;
+    } 
+}
+section{
+    background-color:aliceblue; 
+}
+.aboutme, .team, .portfolio, .blog{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    color:orange; 
+}
+h1{
+    font-size:30px;
+    font-weight:400;
+}
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+} 
+.col-right p{
+    text-align: justify;
+    padding-bottom:20px;
+    padding-left: 20px;
+  
+}
+.col-right{
+    border-left: 3px solid darkgreen;
+}
+.col-right .name{
+    color:darkgreen;
+}
+@media (max-width:768px) {
+
+.row{
+        flex-direction:column;
+}
+.aboutme {
+    text-align: center;
+}  
+}
+.col-left p{
+ padding-top: 20px;  
+}
+.col-left img{
+    border-radius: 50%;
+}
+
+
+
+/*porfolio*/
+.grid-wrapper{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+}
+.box>img{
+    width:150px;
+   
+}
+.box{
+    margin-top:50px;
+    padding:0;
+}
+
+
+/*Blog*/
+
+.blog{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    color:orange;
+}
+.card{
+    flex-basis:31%;
+    border-radius:10px;
+    margin-bottom:5%;
+    text-align:left;
+}
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+.card
+/*Our Team*/
+.namecol{
+    background-color: orange;
+}
+.col-left-footer p{
+    color:orange;
+    font-size:20px;
+    padding:40px;
+}
+.row-footer{
+    margin-top:5%;
+    display:flex;
+    justify-content: center;
+}
+.box{
+    margin-bottom:1Opx;
+    width: 100%;
+    height:40px;
+    padding:10px;
+}

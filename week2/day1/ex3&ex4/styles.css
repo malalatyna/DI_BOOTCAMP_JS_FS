@@ -1,0 +1,77 @@
+:root{
+    --item-backgroundcolor: rgb(0, 179, 255);
+    --height-container:300px;
+    --width-container:500px;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    width: 800px;
+    border: 2px solid orange;
+    font-weight: bold;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container>div{
+  
+   margin-top: 5px;
+   margin-bottom: 5px;
+   text-align: center;
+   padding-top: 10px;
+   width: 80px;
+   height: 30px;
+ }
+
+.item1{
+    background-color:rgb(128, 126, 0);
+    width: 80px;
+}
+.item2{
+    flex:1;
+    background-color:rgba(14, 97, 18, 0.679);  
+}
+.item3{
+    flex:1;
+    background-color:rgba(1, 20, 10, 0.363);
+}
+
+.container1{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: var(--width-container);
+    height: var(--height-container);
+    text-align: center;
+    border: 2px solid orange;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container1>div{
+    flex-wrap: wrap;
+    margin-right: 5px;
+    align-content:center;
+    padding-top: 30px;
+}
+.box1{
+
+    background-color: var(--item-backgroundcolor);
+    height:calc(var(--height-container)/3);
+    width: calc(var(--width-container)/3);
+    margin: 5px;
+}
+.box2{
+    background-color: var(--item-backgroundcolor);
+    height: calc(var(--height-container)/3);
+    margin:0;
+    width:inherit;
+}
+
+.box3{
+    background-color: var(--item-backgroundcolor);
+    height:calc(var(--height-container)/3);
+    width: calc(var(--width-container)/3);
+    margin: 5px;
+}

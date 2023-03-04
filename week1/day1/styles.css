@@ -1,0 +1,44 @@
+main  {
+    width: 500px;
+    height:300px;
+
+}
+main>span {
+    display:block;
+    float:left;
+    width:calc((100%/ 3));
+    height: 100%;
+    background-color:bisque;
+}
+main>span.blue {
+    background-color: blue;
+}
+main>span.white {
+    background-color:white;
+}
+main>span.red {
+    background-color:red;
+}
+
+div>li.secondli{
+    color:blue ;
+}
+/*.turn-me-blue{
+    background-color: blue;
+}*/
+body>div:first-of-type li:nth-of-type(2){
+    background-color:blue;
+}
+body>div:first-of-type li {
+    text-transform: uppercase;
+    font-weight:bold;
+}
+body>div:nth-of-type(2) p:first-of-type{
+   color:white;
+    background-color:pink
+}
+body>div:nth-of-type(2) p:last-of-type{
+    background-color: lightblue;
+    padding: 50px;
+    margin: 20px 30px;
+}

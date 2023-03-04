@@ -1,0 +1,67 @@
+:root{
+    --item-backgroundcolor: rgb(0, 179, 255);
+    --height-container:300px;
+    --width-container:500px;
+}
+.container, .container1{
+    display:flex;
+    flex-direction:column;
+    width: var(--width-container);
+    height: var(--height-container);
+    border: 2px solid orange;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.container>div{
+    flex-wrap:wrap;
+    padding-top: 25px;
+    margin: 5px;
+   
+}
+.item1{
+    background-color: var(--item-backgroundcolor);
+    height: calc(var(--height-container)/7);
+    width:calc(var(--width-container)-5px);
+
+}
+.item2{
+    background-color: var(--item-backgroundcolor);
+    height:calc(var(--height-container)/2);
+    width: calc(var(--width-container)/2);
+    align-self:center;
+}
+
+.item3{
+   
+    background-color: var(--item-backgroundcolor);
+    height: calc(var(--height-container)/7);
+    width:calc(var(--width-container)-5px);
+}
+
+.container1>div{
+    flex-wrap:wrap;
+    padding-top: 35px;
+    margin:5px;
+   
+}
+.box1{
+    background-color: var(--item-backgroundcolor);
+    height: calc(var(--height-container)/3);
+    width:calc(var(--width-container)-5px);
+
+}
+.box2{
+    background-color: var(--item-backgroundcolor);
+    height:calc(var(--height-container)/4);
+    width: calc(var(--width-container)/4);
+    align-self: flex-end;
+}
+
+.box3{
+   
+    background-color: var(--item-backgroundcolor);
+    height: calc(var(--height-container)/3);
+    width:calc(var(--width-container)-5px);
+}
