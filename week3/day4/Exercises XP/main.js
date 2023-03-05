@@ -27,7 +27,18 @@ if (newDog=='Chihuahua')
     console.log('I dont care, I prefer cats');
  }
 
-//Exercises 3: in another file
+
+ //Exercise 3: Even Or Odd
+ const nbr=prompt("Please enter a number!");
+
+ if(nbr%2===0)
+ {
+    console.log(nbr,"is an even number");
+ }
+ else{
+    console.log(nbr,"is an odd number");
+ }
+
 
  //Exercise 4: Group Chat
 
