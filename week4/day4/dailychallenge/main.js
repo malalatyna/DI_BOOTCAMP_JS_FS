@@ -6,39 +6,3 @@
 
 const sentence='Hello, World, in, a, frame, please';
 
-const splitSentence = value =>{
-
-    let result=value.split(',');
-    result=trimEachWordOfSentenceArray(result);
-
-    return result;
-};
-
-const trimEachWordOfSentenceArray = arr=>{
-
-    return arr.map(str => {
-        const trimedStr = str.trim();
-        return trimedStr;
-    });
-}
-const words=splitSentence(sentence);
-console.log(words);
-
-//find the longest word in array
-
-// let maxWordLenght = 0;
-
-// function findLongestWord(str){
-
-// for (let i=0; i<=words.lenght; i++){
-
-//   if(words[i].lenght<words[i+1].lenght){
-
-//         maxWordLenght=words[i+1].lenght;
-//     }else{
-//         maxWordLenght=words[i].lenght;
-//     }
- 
-//     }
-// }
-
