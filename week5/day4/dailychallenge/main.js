@@ -9,6 +9,8 @@
 // const submitBtn = document.getElementById('lib-button');
 // const shuffleBtn = document.getElementById('shuffle-button');
 // const storyContainer = document.getElementById('story');
+
+
 const { 
    noun: input1, 
    adjective: input2, 

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Raleway:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300&family=Roboto:ital,wght@0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    height: 100vh;
+    width:100vw;
+    background-color: rgb(234, 85, 85);
+
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    color:rgb(235, 234, 245);
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+.todo-list{
+    
+    width:450px; 
+    padding:20px;
+    box-shadow: 0 10px 40px rgb(3, 3, 63);
+    border-radius:5px;
+    background-color:aliceblue;
+}
+
+.list-head{
+    display:grid;
+    grid-template-columns:4fr 1fr;
+    gap: 20px;
+    justify-self: center;
+}
+.entered-list{
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.add-list{
+    border:none;
+    border-radius: 5px;
+    background-color:rgb(3, 3, 63);
+    outline:none;
+    font-size: 16px;
+    color:#fff;
+    cursor:pointer;
+    opacity:.6;
+    pointer-events:none;
+}
+.add-list.active{
+    opacity:1;
+    pointer-events: all;
+}
+.listTasks{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.item{
+    padding: 10px; 
+    border-bottom: 1px solid black;
+    display:flex; 
+    justify-content:flex-start;
+    align-items:center;
+}
+
+
+.item p{
+    font-size: 16px;
+    color:black;
+    letter-spacing: 1px; 
+}
+
+.item.completed p {
+    text-decoration: line-through!important;
+    color: rgb(215, 23, 23)!important;
+}
+
+.item-btn{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+}
+.item.btn i {
+    color: rgb(3, 3, 63);
+    font-size:20px;  
+    cursor:pointer;
+}
