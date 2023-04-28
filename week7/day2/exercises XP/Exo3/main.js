@@ -4,12 +4,7 @@
 //is a string or not. Use ternary operator
 //Check out the example below to see the expected output
 
-const isString = () => ? 'true'
+const isString = (value) => typeof value === 'string' ? true : false;
 
-
-
-
-console.log(isString('Hello'))
-console.log(isString([1, 2, 4, 0]))
-   
-
+console.log(isString('Hello')); 
+console.log(isString([1, 2, 4, 0])); 
