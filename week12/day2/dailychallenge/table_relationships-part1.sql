@@ -23,7 +23,7 @@ CREATE TABLE customer_profile(
 	isLoggedIn BOOLEAN DEFAULT false,
 	customer_id INTEGER,
 	FOREIGN KEY (customer_id) REFERENCES customer (customer_id)
-);
+); 
 -- Insert values into customers
 INSERT INTO customer(first_name, last_name)
 VALUES ('John', 'Doe'),
